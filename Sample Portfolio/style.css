@@ -1,0 +1,131 @@
+/* General Style rules */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 80vh;
+    background-color: #ca6161;
+}
+
+/* Header Style rules */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #17801b;
+    color: #4e2828;
+}
+
+#logo {
+    height: 50px;
+    width: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #ffeb3b;
+}
+
+/* Main Section Style rules */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+    flex: 1;
+}
+
+#about, #projects, aside {
+    flex: 1 1 300px;
+    margin: 10px;
+    padding: 20px;
+    background-color: beige;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Items Container and Grid Style rules */
+#items-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.item {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #2196F3;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#items-container .item:nth-child(even) {
+    background-color: #f57c00;
+}
+
+.item:hover {
+    background-color: #0a5bac;
+}
+
+/* Hover effect for even items */
+#items-container .item:nth-child(even):hover {
+    background-color: #6f4215;
+}
+
+/* Footer Style rules */
+footer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    background-color: #17801b;
+    color: #fff;
+}
+
+/* Pseudo-elements Example */
+nav a::before {
+    content: " ";
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    background-color: #ffeb3b;
+    margin-right: 5px;
+    border-radius: 50%;
+}
+
+/* Pseudo-classes Example */
+a:hover {
+    color: #ffeb3b;
+}
+
+a:focus {
+    outline: 2px solid #ffeb3b;
+}
+
+/* Child combinator example */
+header > nav ul {
+    font-weight: bold; /* Makes the font bold */
+}
+
+/* Attribute selector example */
+section[id="about"] {
+    color: #4c5d65; /* Change font color of the 'about' section */
+}
