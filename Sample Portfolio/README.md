@@ -28,4 +28,4 @@ Open the `index.html` file in your web browser to view the portfolio. The websit
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE.txt) file for details.
+This project is licensed under the MIT License - see the [LICENSE](License.txt) file for details.
